@@ -14,10 +14,11 @@ app.use(express.static('public')); // Carpeta para el HTML
 
 // Configuración de la base de datos
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: sql.freedb.tech,
+  user: freedb_jatziri,
+  password: "AZUyQ2d?F3Z7?c2",
+  port: 3306,
+  database: freedb_proteccion_civil,
   charset: 'utf8mb4'
 });
 
